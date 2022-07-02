@@ -6,6 +6,15 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      },
+    },
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
